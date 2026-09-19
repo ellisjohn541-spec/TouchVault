@@ -1,0 +1,15 @@
+{
+    "name": "touchvault.johnellis",
+    "description": "a native KeePass-compatible password manager for ubuntu touch",
+    "architecture": "$ENV{ARCH}",
+    "title": "TouchVault",
+    "hooks": {
+        "touchvault": {
+            "apparmor": "touchvault.apparmor",
+            "desktop":  "touchvault.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "John Ellis <johnellis@live.com>",
+    "framework" : "$ENV{CLICK_FRAMEWORK}"
+}

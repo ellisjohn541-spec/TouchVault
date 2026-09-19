@@ -1,0 +1,5 @@
+readonly property int screenMargin: units.gu(2)
+readonly property int sectionSpacing: units.gu(3)
+readonly property int cardRadius: units.gu(1)
+readonly property int iconLarge: units.gu(8)
+readonly property int buttonHeight: units.gu(6)

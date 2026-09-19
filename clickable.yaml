@@ -1,0 +1,12 @@
+clickable_minimum_required: 8.8.0
+builder: cmake
+kill: qmlscene
+
+dependencies_host:
+  - python3-pip
+
+postbuild:
+  - 'rm -rf "${INSTALL_DIR}/python"'
+  - 'mkdir -p "${INSTALL_DIR}/python"'
+  - 'python3 -m pip install --disable-pip-version-check --upgrade "pip==25.0.1"'
+  - 'python3 -m pip install --disable-pip-version-check --only-binary=:all: --platform manylinux2014_aarch64 --implementation cp --python-version 312 --target "${INSTALL_DIR}/python" -r "${SRC_DIR}/requirements.txt"'

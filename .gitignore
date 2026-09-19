@@ -1,0 +1,26 @@
+# Clickable / build output
+/build/
+/.clickable/
+*.click
+
+# KeePass vaults - NEVER commit user vault data
+*.kdbx
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment / secrets
+.env
+.env.*
+
+# Editor / OS junk
+.vscode/
+.idea/
+*~
+.DS_Store
